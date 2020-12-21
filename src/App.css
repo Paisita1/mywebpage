@@ -1,6 +1,10 @@
-.login:focus = {
+/*.login:focus = {
   outline: none;
   border: 1px solid #1877f2 !important;
   box-shadow: 0 0 0 2px #e7f3ff !important;
   caret-color: #1877f2 !important;
+}*/
+
+.button:focus = {
+	outline: none;
 }
