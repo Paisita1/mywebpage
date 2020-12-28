@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 import './App.css';
+import HomePage from './Components/Homepage/Homepage.js';
 import container from './divcontainer.svg';
 import items from './divitems.svg';
 import itemsExample1 from './itemsimg1.svg';
@@ -48,7 +49,7 @@ export default class MyWebsite extends React.Component {
   }
 }
 
-class HomepageTitle extends React.Component {
+/*class HomepageTitle extends React.Component {
   render() {
     return (
         <div style={{display: "flex", flexDirection: "column"}}>
@@ -207,7 +208,7 @@ class HomePage extends React.Component {
         </div>
       );
   }
-}
+}*/
 
 
 class ProjectPageTitle extends React.Component {
