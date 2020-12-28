@@ -9,6 +9,8 @@ import {
 import './App.css';
 import HomePage from './Components/Homepage/Homepage.js';
 import ProjectPage from './Components/ProjectPage/ProjectPage.js';
+import AboutMe from './Components/ProjectPage/AboutMePage/AboutMe.js';
+
 import container from './divcontainer.svg';
 import items from './divitems.svg';
 import itemsExample1 from './itemsimg1.svg';
@@ -16,7 +18,6 @@ import containerExample1 from './containerimg1.svg';
 import itemsExample2 from './itemsimg2.svg';
 import flexWrap from './flex-wrap.svg';
 import justifyContent from './justify-content.svg';
-import Isaac from './Isaac.jpg';
 
 const styles = {};
 
@@ -40,7 +41,7 @@ export default class MyWebsite extends React.Component {
             </Route>
 
             <Route path="/aboutme">
-              <About />
+              <AboutMe />
             </Route>
 
           </Switch>
@@ -49,50 +50,6 @@ export default class MyWebsite extends React.Component {
       )
   }
 }
-
-
-/*class ProjectPageTitle extends React.Component {
-  render() {
-    return (
-        <div style={{display: "flex", justifyContent: "center", width: "100%"}}>
-          <h1>{'Select a project to view'}</h1>
-        </div>
-      )
-  }
-}
-
-class ProjectNav extends React.Component {
-  render() {
-    return (
-        <div style={{display: "flex", width: "80%", border: "1px solid black", margin: "0 90px", padding: "20px 30px"}}>
-
-          <NavLink to="/aboutme" target="_blank" style={{textDecoration: "none"}}>
-            <div style={{height: "125px", width: "125px", border: "1px solid blue", color: "black", padding: "5px", marginRight: "30px"}}>
-              {"About me"}
-            </div>
-          </NavLink>
-
-          <NavLink to="/flexboxpage" target="_blank" style={{textDecoration: "none"}}>
-            <div style={{height: "125px", width: "125px", border: "1px solid blue", color: "black", padding: "5px"}}>
-              {"Near perfect copy of css-tricks flexbox guide"}
-            </div>
-          </NavLink>
-
-        </div>
-      )
-  }
-}
-
-class ProjectPage extends React.Component {
-  render() {
-    return (
-        <div style={{display: "flex", flexDirection: "column"}}>
-          <ProjectPageTitle />
-          <ProjectNav />
-        </div>
-      )
-  }
-}*/
 
 class Flexbox extends React.Component {
   render() {
@@ -1328,73 +1285,4 @@ styles.navBarItems = {
     paddingRight: "10px",
     paddingBottom: "5px",
     fontSize: "13px",
-}
-
-class About extends React.Component {
-
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      'whoAmISection': 'iono nigguh',
-      'childhoodSection': 'sup bruh',
-      'futureSection': 'lol theres nothing'
-    }
-  }
-
-  componentDidMount() {
-    let requestOptions = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ "name": "Isaac" })
-    };
-
-    fetch('http://localhost:3001/getWhoAmISection', requestOptions)
-    .then(response => response.json())
-    .then(res => this.setState({'whoAmISection': res.data}));
-
-    fetch('http://localhost:3001/getChildhoodSection', requestOptions)
-    .then(response => response.json())
-    .then(res => this.setState({'childhoodSection': res.data}))
-
-    fetch('http://localhost:3001/getFutureSection', requestOptions)
-    .then(response => response.json())
-    .then(res => this.setState({'futureSection': res.data}))
-  }
-
-  render(){
-    return (
-      <div style= {{width: "100%"}}>
-        <div style= {{width: "50%", marginLeft: "auto", marginRight: "auto", border: "5px solid black",
-                      borderRadius: "10px", padding: "20px"}}>
-          <div style= {styles.pageHeaders}>
-            <h2>About Me</h2>
-          </div>
-          <div style= {{display: "flex", justifyContent: "center", width: "100%"}}>
-            <figure style= {{width: "100%", margin: "0"}}>
-              <img src= {Isaac} alt= "Isaac" style= {{width: "100%"}}/>
-              <figcaption style= {{fontSize: "12px"}}>Taken 10/15/2020 6:19pm; Random ass picture I took for this about me page.</figcaption>
-            </figure>
-          </div>
-          <div style= {{width: "100%", marginRight: "auto", marginLeft: "auto"}}>
-
-            <h3 style= {{textAlign: "center"}}>Who Am I?</h3>
-
-            <p style= {{fontFamily: "sans-serif", borderBottom: "1px solid black", paddingBottom: "20px"}}>
-              {this.state.whoAmISection}
-            </p>
-
-            <h3 style= {{textAlign: "center"}}>Childhood</h3>
-            <p style= {{fontFamily: "sans-serif", borderBottom: "1px solid black", paddingBottom: "20px"}}>
-              {this.state.childhoodSection}
-            </p>
-            <h3 style= {{textAlign: "center"}}>Future</h3>
-            <p style= {{fontFamily: "sans-serif"}}>
-              {this.state.futureSection}
-            </p>
-          </div>
-        </div>
-      </div>
-    );
-  }
 }
