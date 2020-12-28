@@ -9,7 +9,7 @@ import {
 import './App.css';
 import HomePage from './Components/Homepage/Homepage.js';
 import ProjectPage from './Components/ProjectPage/ProjectPage.js';
-import AboutMe from './Components/ProjectPage/AboutMePage/AboutMe.js';
+import AboutMe from './Components/ProjectPage/Projects/AboutMePage/AboutMe.js';
 
 import container from './divcontainer.svg';
 import items from './divitems.svg';
@@ -60,7 +60,6 @@ class Flexbox extends React.Component {
 
             <div style={{
                 borderRight: '1px solid rgb(32, 28, 41)',
-                /*marginRight: '10px',*/
                 paddingRight: '10px',
               }}
             >

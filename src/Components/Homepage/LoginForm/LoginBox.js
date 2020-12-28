@@ -45,7 +45,7 @@ export default class LoginBox extends React.Component {
     .then(res => {
       console.log("res")
       console.log(res)
-      if (res.length == 0 || res[0].Username != this.state.username || res[0].Password != this.state.password) {
+      if (res.length === 0 || res[0].Username !== this.state.username || res[0].Password !== this.state.password) {
         alert("Wrong username or password. Stop tryna hack my website");
       }
       else {
@@ -56,7 +56,7 @@ export default class LoginBox extends React.Component {
 
 
   focusHandler(a) {
-    if (a == 1) {
+    if (a === 1) {
       this.setState({box1: styles.loginFocus})
     }
     else {
@@ -65,7 +65,7 @@ export default class LoginBox extends React.Component {
   }
 
   blurHandler(a) {
-    if (a == 1) {
+    if (a === 1) {
       this.setState({box1: styles.loginBlur})
     }
     else {
@@ -99,7 +99,6 @@ styles.loginBlur = {
 
 styles.loginFocus = {
   outline: "none",
-  border: "1px solid #1877f2",
   boxShadow: "0 0 0 2px #e7f3ff",
   caretColor: "#1877f2",
   fontSize: "17px",
