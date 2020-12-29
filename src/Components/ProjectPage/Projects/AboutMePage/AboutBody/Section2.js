@@ -31,6 +31,6 @@ export default class Section2 extends React.Component {
 	        </p>
 
         </div>
-			)
+			);
 	}
 }

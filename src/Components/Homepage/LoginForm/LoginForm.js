@@ -9,7 +9,7 @@ export default class LoginForm extends React.Component {
         <div style={styles.loginform}>
           <LoginBox />
         </div>
-      )
+      );
   }
 }
 

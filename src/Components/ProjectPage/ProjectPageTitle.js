@@ -6,6 +6,6 @@ export default class ProjectPageTitle extends React.Component {
         <div style={{display: "flex", justifyContent: "center", width: "100%"}}>
           <h1>{'Select a project to view'}</h1>
         </div>
-      )
+      );
   }
 }

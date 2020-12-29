@@ -8,7 +8,7 @@ export default class AboutTitle extends React.Component {
 			<div style= {styles.pageHeaders}>
     			<h2>About Me</h2>
 			</div>
-		)
+		);
 	}
 }
 

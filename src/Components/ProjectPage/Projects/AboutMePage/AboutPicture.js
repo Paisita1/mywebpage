@@ -10,6 +10,6 @@ export default class AboutPicture extends React.Component {
 	              <figcaption style= {{fontSize: "12px"}}>Taken 10/15/2020 6:19pm; Random ass picture I took for this about me page.</figcaption>
 	            </figure>
          	</div>
-		)
+		);
 	}
 }

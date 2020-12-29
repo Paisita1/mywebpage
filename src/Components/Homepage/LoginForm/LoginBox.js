@@ -84,7 +84,7 @@ export default class LoginBox extends React.Component {
           </div>
           <input className="button" type="button" value="Submit" style={styles.submitButton} onClick={this.loginButtonHandler} />
         </div>
-      )
+      );
   }
 }
 

@@ -15,6 +15,6 @@ export default class AboutBody extends React.Component {
           <Section3 />
 
         </div>
-      )
+      );
   }
 }

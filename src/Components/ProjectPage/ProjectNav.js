@@ -19,6 +19,6 @@ export default class ProjectNav extends React.Component {
           </NavLink>
 
         </div>
-      )
+      );
   }
 }

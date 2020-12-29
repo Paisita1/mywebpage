@@ -9,6 +9,6 @@ export default class ProjectPage extends React.Component {
           <ProjectPageTitle />
           <ProjectNav />
         </div>
-      )
+      );
   }
 }
