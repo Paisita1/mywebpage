@@ -4,103 +4,19 @@ import React from "react";
 
 import {images} from './Assets/images.js'
 
+import NavBar from './PageHeader/NavBar/NavBar.js';
+import PageDesc from './PageHeader/PageDesc/PageDesc.js';
+
 const styles = {}
 
 export default class Flexbox extends React.Component {
   render() {
     return (
-        <div style={{display: "flex", flexDirection: "column", backgroundColor: "black"}}>
+        <div style={{display: "flex", flexDirection: "column", backgroundColor: "black", width: "100%"}}>
 
-          <div style={{display: "flex", margin: "27px 0", width: "100%", borderBottom: "1px solid orange", paddingBottom: "15px", paddingLeft: "50px"}}>
+          <NavBar />
 
-            <div style={{
-                borderRight: '1px solid rgb(32, 28, 41)',
-                paddingRight: '10px',
-              }}
-            >
-                <h2 style={{color: "white", marginBottom: "15px", fontSize: "2em"}}>
-                  {'CSS-TRICKS'}
-                </h2>
-              
-            </div>
-
-            <div style={{display: "flex", fontFamily: "Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif", fontWeight: "600"}}>
-              <a className="flexBar" href="" target="_blank" style={styles.navBarItems}>{'Articles'}</a>
-              <a className="flexBar" href="" target="_blank" style={styles.navBarItems}>{'Videos'}</a>
-              <a className="flexBar" href="" target="_blank" style={styles.navBarItems}>{'Almanic'}</a>
-              <a className="flexBar" href="" target="_blank" style={styles.navBarItems}>{'Newsletter'}</a>
-              <a className="flexBar" href="" target="_blank" style={styles.navBarItems}>{'Guides'}</a>
-              <a className="flexBar" href="" target="_blank" style={styles.navBarItems}>{'Books'}</a>
-              <a className="flexBar" href="" target="_blank" style={styles.navBarItems}>{'Account'}</a>
-            </div>
-
-            <div style={{display: "flex", marginLeft: "30px", paddingTop: "20px", paddingBottom: "15px"}}>
-
-              <input type="search" style={{backgroundColor: "#201c29", color: "white", border: 0, fontSize: "100%", borderBottomLeftRadius: "27px", borderTopLeftRadius: "27px", paddingLeft: "20px", width: "270px"}} placeholder="e.g flexbox" />
-
-              <button type="button" style={{background: "linear-gradient(90deg,#ff8a00,#e52e71)", color: "white", border: 0, padding: "0 22px 0 7px", width: "55px", borderTopRightRadius: "27px", borderBottomRightRadius: "27px", borderTopLeftRadius: "8px", borderBottomLeftRadius: "8px"}}>
-                {'search'}
-              </button>
-
-            </div>
-
-          </div>
-
-          <div style={{paddingLeft: "50px"}}>
-
-            <div style={{color: "grey"}}>
-              {'Guide'}
-            </div>
-
-            <h1 style={{
-                color: "white",
-                fontFamily: "Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif",
-                fontSize: "2.5rem",
-                margin: "0 0 1.5rem"
-              }}
-            >
-              {'A Complete Guide to Flexbox'}
-            </h1>
-
-            <div style={{margin: "0 0 1.5rem"}}>
-
-              <div style={{
-                  color: "#7a7a8c",
-                  fontFamily: "Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif",
-                  fontSize: ".7rem",
-                  marginBottom: "3px"
-                }}
-              >
-                {'Last Updated'}
-              </div>
-
-              <div style={{
-                  color: "white",
-                  fontSize: ".9rem"
-                }}
-              >
-                {'Oct 22, 2020'}
-              </div>
-
-            </div>
-
-            <div style={{maxWidth: "590px"}}>
-
-            <p style={{
-                color: "#c2c2c2",
-                fontFamily: "Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol",
-                fontSize: "1.3rem",
-                margin: "0 0 1.5rem"
-              }}
-            >
-              {`Our comprehensive guide to CSS flexbox layout. This complete guide explains everything 
-                about flexbox, focusing on all the different possible properties for the parent element (the flex container) 
-                and the child elements (the flex items). It also includes history, demos, patterns, and a browser support chart.`}
-            </p>
-
-            </div>
-
-          </div>
+         	<PageDesc />
 
           <div style={{
               backgroundColor: "White",
@@ -1227,16 +1143,4 @@ export default class Flexbox extends React.Component {
         </div>
       );
   }
-}
-
-styles.navBarItems = {
-    display: "flex",
-    alignItems: "flex-end",
-    color: "white",
-    textDecoration: "none",
-    marginLeft: "10px",
-    borderRight: "1px solid #201c29",
-    paddingRight: "10px",
-    paddingBottom: "5px",
-    fontSize: "13px",
 }
