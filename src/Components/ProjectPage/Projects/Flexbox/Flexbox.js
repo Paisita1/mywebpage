@@ -2,10 +2,9 @@ import React from "react";
 
 //import 'Flexbox.css'
 
-import {images} from './Assets/images.js'
+import {images} from './Assets/images.js';
 
-import NavBar from './PageHeader/NavBar/NavBar.js';
-import PageDesc from './PageHeader/PageDesc/PageDesc.js';
+import PageHeader from './PageHeader/PageHeader.js';
 
 const styles = {}
 
@@ -14,9 +13,7 @@ export default class Flexbox extends React.Component {
     return (
         <div style={{display: "flex", flexDirection: "column", backgroundColor: "black", width: "100%"}}>
 
-          <NavBar />
-
-         	<PageDesc />
+        	<PageHeader />
 
           <div style={{
               backgroundColor: "White",
