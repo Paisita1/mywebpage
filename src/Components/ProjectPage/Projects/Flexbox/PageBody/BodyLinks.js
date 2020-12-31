@@ -3,7 +3,7 @@ import React from "react";
 export default class BodyLinks extends React.Component {
 	render() {
 		return (
-			
+
 				<div>
 
           <h3 style={{
@@ -37,4 +37,5 @@ export default class BodyLinks extends React.Component {
 
         </div>
 			);
+		}
 	}
