@@ -1,5 +1,7 @@
 import React from "react";
 
+import '../../Flexbox.css';
+
 const styles = {}
 
 export default class NavBarLinks extends React.Component {

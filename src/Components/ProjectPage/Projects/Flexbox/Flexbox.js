@@ -1,7 +1,5 @@
 import React from "react";
 
-//import 'Flexbox.css'
-
 import PageHeader from './PageHeader/PageHeader.js';
 import PageBody from './PageBody/PageBody.js';
 

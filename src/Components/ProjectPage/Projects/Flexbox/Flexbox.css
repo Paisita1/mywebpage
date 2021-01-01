@@ -1,0 +1,13 @@
+.flexBar:hover {
+  color: orange !important;
+}
+
+.textLinks:hover {
+  text-decoration: none !important;
+  color: orange !important;
+}
+
+.textHover:hover {
+  color: orange !important;
+  cursor: pointer;
+}

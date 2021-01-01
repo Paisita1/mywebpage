@@ -9,11 +9,11 @@ export default class ContainerAndChildren extends React.Component {
 
 				<div style={{display: "flex"}}>
 
-            <ContainerColumn />
+          <ContainerColumn />
 
-            <ItemColumn />
+          <ItemColumn />
 
-          </div>
+        </div>
 
 			);
 	}
